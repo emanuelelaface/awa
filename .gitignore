@@ -3,3 +3,5 @@ website/.sass-cache/
 website/.jekyll-cache/
 website/.jekyll-metadata
 website/.bundle/
+.DS_Store
+*/.DS_Store/*

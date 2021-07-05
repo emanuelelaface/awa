@@ -26,9 +26,9 @@ The structure of the data is described on the [EU Portal](https://ec.europa.eu/h
 
 Then the app is simply a QR Code scanner that decodes the data and display them to the user.
 
-![Screenshot Green Pass iPhone 1](/assets/img/green-pass-01.png)![Screenshot Green Pass iPhone 2](/assets/img/green-pass-02.png)
+![Screenshot Green Pass iPhone 1](/assets/img/green-pass-01.png) ![Screenshot Green Pass iPhone 2](/assets/img/green-pass-02.png)
 
-![Screenshot Green Pass AW 1](/assets/img/green-pass-03.png)![Screenshot Green Pass AW 2](/assets/img/green-pass-04.png)![Screenshot Green Pass AW 3](/assets/img/green-pass-05.png)
+![Screenshot Green Pass AW 1](/assets/img/green-pass-03.png) ![Screenshot Green Pass AW 2](/assets/img/green-pass-04.png) ![Screenshot Green Pass AW 3](/assets/img/green-pass-05.png)
 
 ## Privacy
 

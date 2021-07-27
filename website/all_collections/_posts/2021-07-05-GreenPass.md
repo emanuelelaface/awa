@@ -8,7 +8,7 @@ tag: covid-19 green pass
 categories: ["category", "subcategory"]
 ---
 
-Since the beginning of July 2021 European Union adopted a Digital Green Pass to facilitate the movement of people within the Union during the pandemia. However many countries are issuing the Pass as PDF to print, and even who is using a dedicated app there is no Apple Watch companion to display the code from the wrist.
+Since the beginning of July 2021 European Union adopted a Digital Green Pass to facilitate the movement of people within the Union during the pandemia. However many countries are issuing the Pass as PDF to print, and even who is using a dedicated app does not provide any Apple Watch companion to display the code from the wrist.
 
 Because the standard of the Green Pass is open, I decided to write an app to handle it.
 

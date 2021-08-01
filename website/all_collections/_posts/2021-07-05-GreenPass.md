@@ -28,6 +28,8 @@ Then the app is simply a QR Code scanner that decodes the data, verify the signa
 
 The verification of the signature requires the public key of the issuer in order to check if the encryption was done with the proper private key. These keys are available only at the members of the Digital COVID-19 Certificate Gateway that, at the moment, does not have a public access so I cannot access it. Luckily, the Netherland Healthcare Authority has a public API that distributes a subset of the available public keys without restrictions, so I am using that [repository](https://verifier-api.coronacheck.nl/v4/verifier/public_keys). If DCCG will decide to open the API to external people, I will implement in a future version of the app.
 
+The source code of the app is available [here](https://github.com/emanuelelaface/GreenPass). Since it uses several JSON files to decode the codes of the various item in the pass (like the kind of vaccine, the laboratory of the test the manufacturer of the test etc.) I create a downloader python script to collect all these different files. The files must be included in the source tree of the app because the conversions are done offline to prevent the app to get stuck if the Internet connection is not available (and to prevent MiTM attacks, especially for the file of the keys).
+
 <img src=/assets/img/green-pass-01.png  width="300"/> <img src=/assets/img/green-pass-02.png  width="300"/>
 
 

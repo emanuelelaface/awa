@@ -22,13 +22,19 @@ The European Union releases the Digital Green Pass as QR Code that contains main
 
 This last information can go under 3 categories: the pass can be generated after a vaccine, after a recovery or after a test, the test can be the rapid or the PCR. These data are packed in a CBOR structure (that is like JSON but binary), gzip compressed and then encoded with Base45. The final result is a string that is converted in a QR Code.
 
-The structure of the data is described on the [EU Portal](https://ec.europa.eu/health/sites/default/files/ehealth/docs/covid-certificate_json_specification_en.pdf), and for the protocol my starting point was the excellent [work of Tobias Girstmair](https://gir.st/blog/greenpass.html) where he also shows a good [link](https://dgc.a-sit.at/ehn/) to generates the different kind of Green Pass. 
+The structure of the data is described on the [EU Portal](https://ec.europa.eu/health/sites/default/files/ehealth/docs/covid-certificate_json_specification_en.pdf) and expanded in the many examples of the [Git Repository](https://github.com/ehn-dcc-development/hcert-spec/blob/main/README.md) and for the protocol my starting point was the excellent [work of Tobias Girstmair](https://gir.st/blog/greenpass.html) where he also shows a good [link](https://dgc.a-sit.at/ehn/) to generates the different kind of Green Pass. 
 
-Then the app is simply a QR Code scanner that decodes the data and display them to the user.
+Then the app is simply a QR Code scanner that decodes the data, verify the signature and display everything to the user.
 
-![Screenshot Green Pass iPhone 1](/assets/img/green-pass-01.png) ![Screenshot Green Pass iPhone 2](/assets/img/green-pass-02.png)
+The verification of the signature requires the public key of the issuer in order to check if the encryption was done with the proper private key. These keys are available only at the members of the Digital COVID-19 Certificate Gateway that, at the moment, does not have a public access so I cannot access it. Luckily, the Netherland Healthcare Authority has a public API that distributes a subset of the available public keys without restrictions, so I am using that [repository](https://verifier-api.coronacheck.nl/v4/verifier/public_keys). If DCCG will decide to open the API to external people, I will implement in a future version of the app.
 
-![Screenshot Green Pass AW 1](/assets/img/green-pass-03.png) ![Screenshot Green Pass AW 2](/assets/img/green-pass-04.png) ![Screenshot Green Pass AW 3](/assets/img/green-pass-05.png)
+<img src=/assets/img/green-pass-01.png  width="300"/> <img src=/assets/img/green-pass-02.png  width="300"/>
+
+
+
+<img src=/assets/img/green-pass-03.png  width="200"/> <img src=/assets/img/green-pass-04.png  width="200"/> <img src=/assets/img/green-pass-05.png  width="200"/>
+
+
 
 ## Privacy
 

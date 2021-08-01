@@ -30,11 +30,11 @@ The verification of the signature requires the public key of the issuer in order
 
 The source code of the app is available [here](https://github.com/emanuelelaface/GreenPass). Since it uses several JSON files to decode the codes of the various item in the pass (like the kind of vaccine, the laboratory of the test the manufacturer of the test etc.) I create a downloader python script to collect all these different files. The files must be included in the source tree of the app because the conversions are done offline to prevent the app to get stuck if the Internet connection is not available (and to prevent MiTM attacks, especially for the file of the keys).
 
-<img src=/assets/img/green-pass-01.png  width="300"/> <img src=/assets/img/green-pass-02.png  width="300"/>
+<img src="/assets/img/green-pass-01.png"  width="300"/> <img src="/assets/img/green-pass-02.png"  width="300"/>
 
 
 
-<img src=/assets/img/green-pass-03.png  width="200"/> <img src=/assets/img/green-pass-04.png  width="200"/> <img src=/assets/img/green-pass-05.png  width="200"/>
+<img src="/assets/img/green-pass-03.png"  width="200"/> <img src="/assets/img/green-pass-04.png"  width="200"/> <img src="/assets/img/green-pass-05.png"  width="200"/>
 
 
 
